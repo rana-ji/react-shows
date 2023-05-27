@@ -1,0 +1,7 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/tv-shows/details/[id]": "pages/tv-shows/details/[id].js",
+  "/tv-shows/[slug]": "pages/tv-shows/[slug].js"
+}
