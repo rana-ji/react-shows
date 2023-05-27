@@ -45,5 +45,7 @@
 
 ## Summary
   This app contains two app one react app which uses the client-side resndering and another one is next app which uses server-side rendering
+  
   To run the react app : npm start
+  
   To run the next app : npm run dev
