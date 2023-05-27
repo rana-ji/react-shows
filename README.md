@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+## React Web Application - TV Shows
+  This is a React web application that fetches TV show data from the TVMaze API and displays it on two endpoints: the listing page and the details page. The application allows users to view a list of TV shows related to "avengers" and access detailed information about each show.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
+  Clone the repository: git clone https://github.com/rana-ji/react-shows.git
+  Navigate to the project directory: cd <project-folder>
+  Install the dependencies: npm install
 
-## Available Scripts
+## Usage
+  Start the development server: npm start
+  Open your browser and go to http://localhost:3000/tv-shows/avengers to access the listing page.
+  Click on the name of a TV show to view its details at http://localhost:3000/tv-shows/details/{id}. Replace {id} with the ID of the TV show you want to see.
+  
+## Listing Page
+  The listing page fetches a list of TV shows matching the provided search term from the TVMaze API and displays them on the page. The search term is specified as a dynamic value in the URL.
 
-In the project directory, you can run:
+  URL: http://localhost:3000/tv-shows/avengers
+  API Endpoint: https://api.tvmaze.com/search/shows?q=avengers
+  Each TV show item on the page displays the following information:
 
-### `npm start`
+  Name of the show
+  Language
+  Genres
+  Runtime
+  Premiered date (formatted as 7th Jan, 1961)
+  Rating
+  Country name
+  Thumbnail (medium size)
+  
+## Details Page
+  The details page shows detailed information about a specific TV show. The TV show ID is specified as a dynamic value in the URL.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  URL: http://localhost:3000/tv-shows/details/{id}
+  API Endpoint: https://api.tvmaze.com/shows/{id}
+  The page fetches the details of the TV show with the specified ID from the TVMaze API and displays the following information:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  Name of the show
+  Language
+  Genres
+  Runtime
+  Premiered date (formatted as 7th Jan, 1961)
+  Rating
+  Country name
+  Thumbnail (medium size)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Summary
+  This app contains two app one react app which uses the client-side resndering and another one is next app which uses server-side rendering
+  To run the react app : npm start
+  To run the next app : npm run dev
